@@ -14,7 +14,7 @@ def radixSort(dataset):
 		for k in range(10):
 			count[k]=count.get(k, [])
 		for d in dataset:
-			index=(d/10**i)%10
+			index=(d//10**i)%10
 			count[index].append(d)
 		j=0
 		for k in range(10):
@@ -27,4 +27,4 @@ def radixSort(dataset):
 
 if __name__ == '__main__':
 	dataset=[123, 5, 475, 543, 24, 1111, 4793]
-	print radixSort(dataset)
+	print (radixSort(dataset))

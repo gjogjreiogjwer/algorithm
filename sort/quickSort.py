@@ -26,4 +26,4 @@ def partition(dataset, lo, hi):
 if __name__ == '__main__':
 	dataset=[6,3,2,7,4,2,5,8]
 	quickSort(dataset, 0, 7)
-	print dataset
+	print (dataset)

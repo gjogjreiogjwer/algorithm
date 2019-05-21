@@ -8,7 +8,7 @@ def heapSort(dataset):
 		return dataset
 	n=len(dataset)
 	# 创造初始堆
-	for i in range(n/2-1,-1,-1):
+	for i in range(n//2-1,-1,-1):
 		shift(dataset,i,n-1)
 	for i in range(n-1,-1,-1):
 		dataset[i],dataset[0]=dataset[0],dataset[i]
@@ -32,4 +32,4 @@ def shift(dataset, lo, hi):
 if __name__ == '__main__':
 	dataset=[6,3,2,7,4,2,5,8]
 	heapSort(dataset)
-	print dataset
+	print (dataset)

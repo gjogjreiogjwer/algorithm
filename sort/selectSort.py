@@ -16,4 +16,4 @@ def selectSort(dataset):
 
 if __name__ == '__main__':
 	dataset=[6,3,2,7,4,2,5,8]
-	print selectSort(dataset)
+	print (selectSort(dataset))

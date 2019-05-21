@@ -6,7 +6,7 @@ def shellSort(dataset):
 	if len(dataset)<=1:
 		return dataset
 	n=len(dataset)
-	gap=n/2
+	gap=n//2
 	while gap>0:
 		for i in range(gap, n):
 			temp=dataset[i]
@@ -15,9 +15,9 @@ def shellSort(dataset):
 				dataset[j+gap]=dataset[j]
 				j-=gap
 			dataset[j+gap]=temp
-		gap/=2
+		gap//=2
 	return dataset
 
 if __name__ == '__main__':
 	dataset=[6,3,2,7,4,2,5,8]
-	print shellSort(dataset)
+	print (shellSort(dataset))

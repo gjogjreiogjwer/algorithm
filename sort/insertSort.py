@@ -35,7 +35,7 @@ def binarySearch(dataset,key,value):
 	left=0
 	right=key-1
 	while left<=right:
-		mid=left+(right-left)/2
+		mid=left+(right-left)//2
 		if dataset[mid]>value:
 			right=mid-1
 		else:
@@ -48,5 +48,5 @@ def binarySearch(dataset,key,value):
 
 if __name__ == '__main__':
 	dataset=[6,3,2,7,4,2,5,8]
-	print binaryInsertSort(dataset)
+	print (binaryInsertSort(dataset))
 

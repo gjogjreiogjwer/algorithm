@@ -5,7 +5,7 @@
 def mergeSort(dataset):
 	if len(dataset)<=1:
 		return dataset
-	mid=len(dataset)/2
+	mid=len(dataset)//2
 	left=mergeSort(dataset[:mid])
 	right=mergeSort(dataset[mid:])
 	return merge(left, right)
@@ -29,4 +29,4 @@ def merge(left, right):
 
 if __name__ == '__main__':
 	dataset=[6,3,2,7,4,2,5,8]
-	print mergeSort(dataset)
+	print (mergeSort(dataset))
